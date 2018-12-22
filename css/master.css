@@ -1,0 +1,63 @@
+html, body {
+  /* Old browser support */
+  width: 100%;
+  height: 100%;
+
+  /* Display and Positioning */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  /* Color */
+  background-color: white;
+}
+
+body {
+  background-color: black;
+}
+
+#id {
+  /* Old browser support */
+  width: 25%;
+  height: 100%;
+
+  /* Display and Positioning */
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 25vw;
+  height: inherit;
+
+  /* Color */
+  background-color: yellow;
+}
+
+#gol-wrapper {
+  /* Old browser support */
+  width: 75%;
+  height: 100%;
+
+  /* Display and Positioning */
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 75vw;
+  height: inherit;
+
+  /* Color */
+  background-color: blue;
+}
+
+#gol {
+  /* Old browser support */
+  width: 75%;
+  height: 100%;
+
+  /* Display and Positioning */
+  width: inherit;
+  height: inherit;
+
+  /* Color */
+  background-color: red;
+}
