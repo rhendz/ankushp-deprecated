@@ -10,54 +10,53 @@ html, body {
   overflow: hidden;
 
   /* Color */
-  background-color: white;
+  background: black;
 }
 
-body {
-  background-color: black;
+h1, h2 {
+  /* text-align: center; */
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 #id {
   /* Old browser support */
-  width: 25%;
-  height: 100%;
+  width: 40%;
+  height: 80%;
+  padding: 10%;
 
   /* Display and Positioning */
-  position: relative;
-  float: left;
-  display: inline-block;
-  width: 25vw;
-  height: inherit;
+  z-index: 100;
+  position: absolute;
+  width: 40vw;
+  height: 80vw;
+  padding: 10vw;
 
   /* Color */
-  background-color: yellow;
+  background: transparent
 }
 
 #gol-wrapper {
   /* Old browser support */
-  width: 75%;
+  width: 100%;
   height: 100%;
 
   /* Display and Positioning */
-  position: relative;
-  display: inline-block;
-  float: right;
-  width: 75vw;
+  z-index: -100;
+  width: inherit;
   height: inherit;
-
-  /* Color */
-  background-color: blue;
 }
 
 #gol {
   /* Old browser support */
-  width: 75%;
+  width: 100%;
   height: 100%;
 
   /* Display and Positioning */
   width: inherit;
   height: inherit;
-
-  /* Color */
-  background-color: red;
+  opacity: 0.5;
 }
