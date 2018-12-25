@@ -24,14 +24,14 @@ p {
 
 #id {
   /* Old browser support */
-  width: 40%;
+  width: 80%;
   height: 80%;
   padding: 10%;
 
   /* Display and Positioning */
   z-index: 100;
   position: absolute;
-  width: 40vw;
+  width: 80vw;
   height: 80vw;
   padding: 10vw;
 
@@ -58,5 +58,25 @@ p {
   /* Display and Positioning */
   width: inherit;
   height: inherit;
-  opacity: 0.5;
+  opacity: 0.25;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet viewport */
+  #id {
+    /* Old browser support */
+    width: 60%;
+
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop viewport */
+  #id {
+    /* Old browser support */
+    width: 40%;
+
+    width: 40vw;
+  }
 }
