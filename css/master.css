@@ -11,6 +11,9 @@ html, body {
 
   /* Color */
   background: black;
+
+  /* Text */
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -43,11 +46,20 @@ h2 {
   background-color: white;
   color: transparent;
 
+  /* Text */
+  font-style: italic;
+  font-size: 1.3em;
+
   /* Animation */
   animation: loadHead 1.5s ease-in forwards, showHead 0.5s ease-in 1s forwards;
 }
 
+span {
+  text-decoration: underline;
+}
+
 ul {
+  pointer-events: all;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -63,6 +75,7 @@ li > a {
 }
 
 #id {
+  pointer-events: none;
   /* Old browser support */
   width: 80%;
   height: 80%;
@@ -106,6 +119,8 @@ li > a {
   height: inherit;
 }
 
+@keyframes showGol { to { opacity: 0.5 } }
+
 #gol {
   /* Old browser support */
   width: 100%;
@@ -114,7 +129,10 @@ li > a {
   /* Display and Positioning */
   width: inherit;
   height: inherit;
-  opacity: 0.25;
+  opacity: 0;
+
+  /* Animation */
+  animation: showGol 1s ease-in 2.5s forwards;
 }
 
 .icon {
