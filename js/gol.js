@@ -5,7 +5,7 @@
 
 // Configuration / Functionality is heavily modified.
 
-(function () {
+function gol() {
 
   // var stats = new Stats();
   // stats.setMode(0); // 0 FPS, 1 MS
@@ -949,4 +949,4 @@
     GOL.init();
   }, false);
 
-}());
+}

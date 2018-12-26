@@ -13,18 +13,49 @@ html, body {
   background: black;
 }
 
-h1, h2, p { color: white; }
+h1 {
+  display: inline-block;
+  margin:0;
+}
+
+h1, h3, p {
+  color: white;
+  margin-bottom: 0;
+}
+
+/* CSS auto width animation hack */
+@keyframes loadHead {
+  from { max-width: 0; }
+  to { max-width: 100%; }
+}
+
+@keyframes showHead { to { color: black; } }
+
+h2 {
+  /* Display and Positioning */
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  border: 2px solid white;
+  white-space: nowrap; /* Text stays on one line */
+
+  /* Color */
+  background-color: white;
+  color: transparent;
+
+  /* Animation */
+  animation: loadHead 1.5s ease-in forwards, showHead 0.5s ease-in 1s forwards;
+}
 
 ul {
   list-style: none;
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
   padding: 0;
 }
 
-li {
-  display: inline-block;
-  padding-right: 5vw;
-}
+li { display: inline-block; }
 
 li > a {
   text-decoration: none;
@@ -46,6 +77,22 @@ li > a {
 
   /* Color */
   background: transparent
+}
+
+@keyframes showText {
+  from { color: transparent; }
+  to { color: white; }
+}
+
+#description * {
+  animation: showText 0.5s ease-in 1.5s;
+  animation-fill-mode: backwards;
+}
+
+#contact * {
+  color: white;
+  animation: showText 0.5s ease-in 2s;
+  animation-fill-mode: backwards;
 }
 
 #gol-wrapper {
@@ -79,6 +126,13 @@ li > a {
 
 @media only screen and (min-width: 768px) {
   /* Tablet viewport */
+  ul {
+    margin-top: 5%;
+    justify-content: flex-start;
+  }
+
+  ul > li { padding-right: 5%; }
+
   #id {
     /* Old browser support */
     width: 60%;
@@ -90,6 +144,7 @@ li > a {
 @media only screen and (min-width: 1200px) {
   /* Desktop viewport */
   a { opacity: 0.75; }
+
   a:hover { opacity: 1; }
 
   #id {
