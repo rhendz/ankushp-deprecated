@@ -17,14 +17,12 @@ html, body {
 }
 
 h1 {
+  color: white;
   display: inline-block;
   margin:0;
 }
 
-h1, h3, p {
-  color: white;
-  margin-bottom: 0;
-}
+h3, p { margin-bottom: 0; }
 
 /* CSS auto width animation hack */
 @keyframes loadHead {
@@ -100,21 +98,11 @@ li > a {
   background: transparent
 }
 
-@keyframes showText {
-  from { color: transparent; }
-  to { color: white; }
-}
+@keyframes showText { to { color: white; } }
 
-#description * {
-  animation: showText 0.5s ease-in 2.5s;
-  animation-fill-mode: backwards;
-}
+#description * { animation: showText 0.5s ease-in 2.5s forwards; }
 
-#contact * {
-  color: white;
-  animation: showText 0.5s ease-in 3s;
-  animation-fill-mode: backwards;
-}
+#contact * { animation: showText 0.5s ease-in 3s forwards; }
 
 #gol-wrapper {
   /* Old browser support */
@@ -147,7 +135,7 @@ li > a {
   width: 2em;
   height: 2em;
   vertical-align: -.125em;
-  color: white;
+  color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
