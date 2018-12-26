@@ -32,15 +32,21 @@ h1, h3, p {
   to { max-width: 100%; }
 }
 
+@keyframes loadHeadPadding {
+  from { padding: 0 0; }
+  to { padding: 0 5px; }
+}
+
 @keyframes showHead { to { color: black; } }
 
 h2 {
   /* Display and Positioning */
   display: inline-block;
   width: auto;
+  max-width: 0;
   margin: 0;
   border: 2px solid white;
-  padding: 0 5px;
+  padding: 0;
   white-space: nowrap; /* Text stays on one line */
 
   /* Color */
@@ -52,7 +58,9 @@ h2 {
   font-size: 1.3em;
 
   /* Animation */
-  animation: loadHead 1.5s ease-in forwards, showHead 0.5s ease-in 1s forwards;
+  animation: loadHead 1.5s ease-in forwards 1s,
+  loadHeadPadding 1.5s ease-in forwards 1s,
+  showHead 0.5s ease-in 2s forwards;
 }
 
 span {
@@ -99,13 +107,13 @@ li > a {
 }
 
 #description * {
-  animation: showText 0.5s ease-in 1.5s;
+  animation: showText 0.5s ease-in 2.5s;
   animation-fill-mode: backwards;
 }
 
 #contact * {
   color: white;
-  animation: showText 0.5s ease-in 2s;
+  animation: showText 0.5s ease-in 3s;
   animation-fill-mode: backwards;
 }
 
@@ -133,7 +141,7 @@ li > a {
   opacity: 0;
 
   /* Animation */
-  animation: showGol 1s ease-in 2.5s forwards;
+  animation: showGol 1s ease-in 3.5s forwards;
 }
 
 .icon {
