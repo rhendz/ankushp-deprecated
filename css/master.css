@@ -87,13 +87,14 @@ ul {
   pointer-events: all;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  margin-top: 10%;
+  justify-content: flex-start;
+  margin-top: 5%;
   padding: 0;
 }
 
 li {
   display: inline-block;
+  margin-right: 5%;
 }
 
 li > a {
@@ -199,22 +200,27 @@ li > a {
   animation: showIcon 0.5s ease-in 3s forwards;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-device-width: 812px) {
+  body {
+    overflow: scroll;
+  }
+
   /* Tablet viewport */
   ul {
     margin-top: 5%;
-    justify-content: flex-start;
-  }
-
-  ul > li {
-    padding-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   #card {
     /* Old browser support */
-    width: 60%;
+    width: 80%;
 
-    width: 60vw;
+    width: 80vw;
+  }
+
+  #gol {
+    touch-action: none;
   }
 }
 
@@ -230,8 +236,10 @@ li > a {
 
   #card {
     /* Old browser support */
-    width: 40%;
+    width: 35%;
 
-    width: 40vw;
+    width: 35vw;
   }
+
+
 }
