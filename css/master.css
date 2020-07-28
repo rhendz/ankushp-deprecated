@@ -204,6 +204,7 @@ li > a {
 @media only screen and (max-device-width: 812px) {
   html, body {
     overflow: scroll;
+    touch-action: pan-y;
   }
 
   /* Tablet viewport */
