@@ -177,7 +177,7 @@ li > a {
   animation: showGol 1s ease-in 3.5s forwards;
 }
 
-@keyframes showIcon {
+@keyframes showImage {
   from {
     opacity: 0;
   } 
@@ -190,18 +190,16 @@ li > a {
   width: 2em;
   height: 2em;
   vertical-align: -0.125em;
-  opacity: 1;
-
-  animation: showIcon 0.5s ease-in 3s forwards;
+  color: white;
 }
 
 #devpost {
   opacity: 0;
-  animation: showIcon 0.5s ease-in 3s forwards;
+  animation: showImage 0.5s ease-in 3s forwards;
 }
 
 @media only screen and (max-device-width: 812px) {
-  body {
+  html, body {
     overflow: scroll;
   }
 
@@ -214,9 +212,9 @@ li > a {
 
   #card {
     /* Old browser support */
-    width: 80%;
+    width: auto;
 
-    width: 80vw;
+    width: auto;
   }
 
   #gol {
