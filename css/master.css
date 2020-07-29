@@ -159,8 +159,8 @@ li > a {
 
   /* Display and Positioning */
   z-index: -100;
-  width: inherit;
-  height: inherit;
+  width: 100vw;
+  height: 100vh;
 }
 
 #gol {
@@ -169,8 +169,8 @@ li > a {
   height: 100%;
 
   /* Display and Positioning */
-  width: inherit;
-  height: inherit;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
 
   /* Animation */
