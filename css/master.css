@@ -220,10 +220,6 @@ li > a {
 
     width: auto;
   }
-
-  #gol {
-    touch-action: none;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
