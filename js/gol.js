@@ -109,7 +109,7 @@
       schemes: [
         {
           dead: "#FFFFFF",
-          alive: ["#95E0A2", "#40C463", "#30A14E"], // UT Orange
+          alive: ["#95E0A2", "#40C463", "#30A14E"],
         },
 
         {
