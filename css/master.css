@@ -122,17 +122,37 @@ li > a {
   }
 }
 
-#description * {
+#description {
   color: white;
   animation: showText 0.5s ease-in 2s forwards;
 }
 
-#contact > h3, i, p, ul {
+#contact {
   color: white;
   animation: showText 0.5s ease-in 3s forwards;
 }
 
-@keyframes showHighlight {
+@keyframes hl-school {
+  from {
+    color: white;
+    background-color: white;
+  } to {
+    color: #2E282A;
+    background-color: #FFB466;
+  }
+}
+
+@keyframes hl-research {
+  from {
+    color: white;
+    background-color: white;
+  } to {
+    color: #2E282A;
+    background-color: #9999FF;
+  }
+}
+
+@keyframes hl-hobby {
   from {
     color: white;
     background-color: white;
@@ -142,8 +162,16 @@ li > a {
   }
 }
 
-#description > p > span {
-  animation: showHighlight 0.5s ease-in 2s forwards;
+span.hl-school {
+  animation: hl-school 0.5s ease-in 2s forwards;
+}
+
+span.hl-research {
+  animation: hl-research 0.5s ease-in 2s forwards;
+}
+
+span.hl-hobby {
+  animation: hl-hobby 0.5s ease-in 2s forwards;
 }
 
 @keyframes showGol {
