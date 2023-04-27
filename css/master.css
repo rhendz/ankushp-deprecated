@@ -152,6 +152,16 @@ li > a {
   }
 }
 
+@keyframes hl-work {
+  from {
+    color: white;
+    background-color: white;
+  } to {
+    color: #2E282A;
+    background-color: #F0979C;
+  }
+}
+
 @keyframes hl-hobby {
   from {
     color: white;
@@ -168,6 +178,18 @@ span.hl-school {
 
 span.hl-research {
   animation: hl-research 0.5s ease-in 2s forwards;
+}
+
+span.hl-work {
+  animation: hl-work 0.5s ease-in 2s forwards;
+}
+
+span.hl-work > a {
+  pointer-events: all;
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  animation: inherit;
 }
 
 span.hl-hobby {
