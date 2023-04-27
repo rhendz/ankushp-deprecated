@@ -1,2 +1,1 @@
-# rhendz.github.io
-rhendz
+# ankushp.com
