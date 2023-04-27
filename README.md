@@ -1,1 +1,1 @@
-# ankushp.com
+# ankushp.com deprecated
